@@ -1,0 +1,25 @@
+/* Base */
+.panel {
+    position: relative;
+    width: 810px;
+    display: none;
+
+    @extend .clear;
+}
+
+.browserupgrade {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #fff;
+    z-index: 9999;
+    padding: 50px;
+
+    a {
+        text-decoration: underline;
+        color: #a52a2a;
+    }
+}
