@@ -1,7 +1,6 @@
 /* Base */
 .panel {
     position: relative;
-    width: 810px;
     display: none;
 
     @extend .clear;
@@ -22,4 +21,55 @@
         text-decoration: underline;
         color: #a52a2a;
     }
+}
+
+body {
+    font-family: $roboto;
+    background: url("../images/base/background.jpg") no-repeat 0 0;
+    padding: 0 19px 0 22px;
+    width: 810px;
+    height: 700px;
+}
+
+.agreement {
+    display: block;
+}
+/* IconS */
+.icon{
+    width: 108px;
+    height: 107px;
+}
+.one{
+    background: url('../images/base/1.png') no-repeat 0 0;
+}
+.two{
+    background: url('../images/base/2.png') no-repeat 0 0;
+}
+.three{
+    background: url('../images/base/3.png') no-repeat 0 0;
+}
+.four{
+    background: url('../images/base/4.png') no-repeat 0 0;
+}
+.five{
+    background: url('../images/base/5.png') no-repeat 0 0;
+}
+.six{
+    background: url('../images/base/6.png') no-repeat 0 0;
+}
+.seven{
+    background: url('../images/base/7.png') no-repeat 0 0;
+}
+/* Overlay */
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: url('../images/base/overlay.png') no-repeat center;
+    width: 810px;
+    height: 700px;
+    display: none;
 }

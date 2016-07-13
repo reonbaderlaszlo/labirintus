@@ -1,0 +1,52 @@
+/* Header */
+header {
+    &:before, &:after {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+
+    a {
+        display: block;
+    }
+
+    .logo {
+        width: 299px;
+        height: 131px;
+        background: url("../images/header/logo.png") no-repeat 0 0;
+        float: left;
+        margin-top: 3px;
+        position: relative;
+        z-index: 2;
+        @include transition-all;
+        &.game-fix{
+        	width: 183px;
+        	height: 80px;
+        	background-size: contain;
+        }
+    }
+
+    nav {
+    	position: relative;
+    	z-index: 2;
+        float: right;
+        margin-top: 27px;
+        @include transition-all;
+        &.game-fix{
+        	margin-top: 19px;
+        }
+    }
+
+    li {
+        text-align: right;
+        line-height: 25px;
+
+        a {
+            font-weight: 300;
+            color: #fff;
+            text-decoration: underline;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/* Buttons */
+button {
+    font-size: 30px;
+    font-family: $robotocond;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #000;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+
+    &:before, &:after {
+        position: absolute;
+        content: " ";
+        z-index: -1;
+    }
+
+    &:before {
+        width: 73px;
+        height: 65px;
+        background: url("../images/buttons/button-before.png") no-repeat 0 0;
+        left: -28px;
+        top: -16px;
+    }
+
+    &:after {
+        width: 82px;
+        height: 78px;
+        background: url("../images/buttons/button-after.png") no-repeat 0 0;
+        right: -31px;
+        bottom: -24px;
+    }
+
+    &.button-1 {
+        width: 193px;
+        height: 78px;
+        background: url("../images/buttons/button-1.png") no-repeat 0 0;
+    }
+
+    &.button-2 {
+        width: 238px;
+        height: 78px;
+        background: url("../images/buttons/button-2.png") no-repeat 0 0;
+    }
+
+    &.button-3 {
+        width: 102px;
+        height: 68px;
+        background: url("../images/buttons/button-3.png") no-repeat 0 0;
+    }
+}

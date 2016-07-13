@@ -1,0 +1,36 @@
+/* Typography */
+h1, h2, h3, p{
+	font-size: 26px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 1px 2px 2px #000;
+}
+h1{	
+	text-transform: uppercase;	
+	color: #f5d74d;
+	font-family: $robotocond;
+	font-weight: 700;
+}
+h2{
+	text-transform: uppercase;
+	color: #fff;
+	font-family: $robotocond;
+	font-weight: 700;
+	span{
+		display: block;
+		text-transform: none;
+		font-family: $roboto;
+		font-weight: 400;
+
+	}
+}
+h3{
+	color: #f5d74d;
+	span{
+		display: block;
+		color: #fff;
+	}
+}
+p{
+	color: #fff;
+}

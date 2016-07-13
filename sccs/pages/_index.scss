@@ -1,0 +1,204 @@
+/* Agreement */
+.agreement {
+    .icon {
+        margin: 57px auto 10px;
+    }
+
+    p {
+        padding-bottom: 12px;
+    }
+
+    input[type=checkbox].css-checkbox {
+        position: absolute;
+        z-index: -1000;
+        left: -1000px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+    }
+
+    input[type=checkbox].css-checkbox + label.css-label {
+        padding-left: 32px;
+        height: 20px;
+        display: inline-block;
+        line-height: 20px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        font-size: 18px;
+        color: #fff;
+        text-shadow: 1px 2px 2px #000;
+        vertical-align: middle;
+        cursor: pointer;
+
+        &.wrong {
+            color: red;
+        }
+    }
+
+    input[type=checkbox].css-checkbox:checked + label.css-label {
+        background-position: 0 -20px;
+    }
+
+    label.css-label {
+        background-image: url("../images/index/checkbox.png");
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .checkbox {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .fix {
+        position: relative;
+        left: 3px;
+    }
+
+    button {
+        margin-top: 55px;
+    }
+}
+
+/* Description */
+.description {
+    h2 {
+        margin-top: 10px;
+    }
+
+    li {
+        &:first-child, &:nth-child(2) {
+            width: 310px;
+            position: absolute;
+            top: 64px;
+        }
+
+        &:last-child {
+            width: 490px;
+            margin: 243px auto 40px;
+        }
+
+        &:first-child {
+            left: 0;
+        }
+
+        &:nth-child(2) {
+            right: 0;
+        }
+    }
+
+    .icon {
+        margin: 0 auto;
+    }
+}
+
+/* Game */
+.game {
+    button {
+        cursor: default;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: -61px;
+        z-index: 2;
+
+        &:before {
+            width: 60px;
+            height: 53px;
+            background-size: contain;
+            left: -21px;
+            top: -12px;
+        }
+
+        &:after {
+            width: 67px;
+            height: 64px;
+            background-size: contain;
+            bottom: -18px;
+        }
+    }
+    .game-box{
+    	width: 540px;
+    	height: 540px;
+    	background-color: #fff;
+    	margin: 35px auto 0;
+    }
+}
+/* Succes Template*/
+.success-template{
+	.icon{
+		margin: 60px auto 10px;
+	}
+	h3{
+		margin-top: 30px;
+	}
+	button{
+		margin-top: 38px;
+	}
+}
+/* Fail template*/
+.fail-template{
+	.icon{
+		margin: 60px auto 33px;
+	}
+	h3{
+		margin-top: 30px;
+	}
+		button{
+		margin-top: 50px;
+	}
+		
+}
+/* The end */
+.the-end{
+	span{
+		color: #f5d74d;
+	}
+	.icon{
+		margin: 52px auto 18px;
+	}
+	p{
+		margin-top: 30px;
+	}
+}
+/* Winners */
+.winners{
+	.icon{
+		margin: 15px auto 10px;
+	}
+	h3{
+		margin-top: 16px;
+	}
+	.title{
+		margin: 29px auto 16px;
+	}
+	.list{
+		height: 179px;
+		overflow: auto;
+		padding: 0 31px 0 19px;
+	}
+	li{
+		font-size: 22px;
+		line-height: 35px;
+		color: #fff;
+		font-weight: 300;
+		border-bottom: 1px solid rgba(255,255,255, 0.20);
+		text-shadow: 1px 2px 2px #000;
+		&:last-child{
+			border-bottom: 0;
+		}
+		span{
+			display: block;
+			float: right;
+		}
+	}
+}

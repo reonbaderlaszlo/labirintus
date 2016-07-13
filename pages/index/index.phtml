@@ -3,27 +3,98 @@
 <main>
 	<!-- Agreement -->
 	<div class="panel agreement">
+		<div class="icon one"></div>
+		<h1>Találj ki a labirintusból!</h1>
+		<p>Nézd meg jó figyelmesen a pályát, hogy időben kijuttasd a fáklyát! A papagájok és forró latin zenék városában már várnak, hogy kezdetét vegye az igazi játék!</p>
+		<div class="checkbox">
+			<input type="checkbox" id="checkboxG1" class="css-checkbox" /><label for="checkboxG1" class="css-label wrong">Feliratkozom a SPAR Hírlevélre</label>
+		</div>
+		<div class="checkbox fix">
+			<input type="checkbox" id="checkboxG2" class="css-checkbox" /><label for="checkboxG2" class="css-label">Elfogadom a játékszabályzatot.</label>
+		</div>
+		<button class="button-1 js-agreement">Tovább</button>
 	</div>
 	<!-- Description -->
 	<div class="panel description">
+		<ul>
+			<li>
+				<div class="icon two"></div>
+				<h2>3 másodperced van,<span>hogy megjegyezd a kiutat!</span></h2>
+			</li>
+			<li>
+				<div class="icon three"></div>
+				<h2>Szabadulj ki<span>a labirintusból a fáklyával!</span></h2>
+			</li>
+			<li>
+				<div class="icon four"></div>
+				<h2>és nyerj akár minden nap<span>3000 Ft értékű SPAR vásárlási utalványt!</span></h2>
+			</li>
+		</ul>
+		<button class="button-1 js-description">Játszom</button>
 	</div>
 	<!-- Game -->
 	<div class="panel game">
+		<button disabled class="button-3">50</button>
+		<div class="game-box"></div>
 	</div>
 	<!-- Success -->
-	<div class="panel success">
+	<div class="panel success success-template">
+		<div class="icon seven"></div>
+		<h1>Gratulálunk!</h1>
+		<p>Sikeresen kijutattad a fáklyát a labirintusból, most már<br>kezdődhet az igazi játék a városban, ahol a papagájok is salsára táncolnak! Bekerültél a napi sorsolásba!<br>Játssz holnap is!</p>
+		<h3>Adj esélyt barátaidnak is a nyerésre,<span>oszt meg a játékot</span></h3>
+		<button class="button-2">Megosztom</button>
+	</div>
+	<!-- Success Last Day-->
+	<div class="panel success-last-day success-template">
+		<div class="icon seven"></div>
+		<h1>Gratulálunk!</h1>
+		<p>Sikeresen kijutattad a fáklyát a labirintusból, most már<br>kezdődhet az igazi játék a városban, ahol a papagájok is salsára táncolnak! Bekerültél a napi sorsolásba!</p>
+		<h3>Adj esélyt barátaidnak is a nyerésre,<span>oszt meg a játékot</span></h3>
+		<button class="button-2">Megosztom</button>
 	</div>
 	<!-- Fail -->
 	<div class="panel fail fail-template">
-
+		<div class="icon six"></div>
+		<h1>Nem jutottál ki a labirintusból!</h1>
+		<p>Sajnos nem nyertél,<br>de gyere vissza holnap is és játssz újra!</p>
+		<h3>Adj esélyt barátaidnak is a nyerésre,<span>oszt meg a játékot</span></h3>
+		<button class="button-2">Megosztom</button>
 	</div>
-	<!-- Played -->
-	<div class="panel played">
+	<!-- Fail Last Day-->
+	<div class="panel fail-last-day fail-template">
+		<div class="icon six"></div>
+		<h1>Nem jutottál ki a labirintusból!</h1>
+		<h3>Adj esélyt barátaidnak is a nyerésre,<span>oszt meg a játékot</span></h3>
+		<button class="button-2">Megosztom</button>
 	</div>
 	<!-- The End -->
+	<div class="panel the-end">
+		<div class="icon five"></div>
+		<h1>Játékunk véget ért,<br>köszönjük, hogy velünk játszottál!</h1>
+		<p>A sorsolás eredményét<br><span>2016. augusztus 11-én 6 óráig</span><br>tesszük közzé.</p>
+		<p>A nyerteseket <span>e-mailben</span> fogjuk értesíteni<br>a további teendőikről.</p>
 	</div>
 	<!-- Winners -->
 	<div class="panel winners">
+		<div class="icon four"></div>
+		<h1>Gratulálunk a szabaduló nyerteseinknek!</h1>
+		<p>A játék lezárását követő 10 napon belül e-mailben értesítjük nyerteseinket a további teendőkről.</p>
+		<h3>Nyeremények naponta:<span>8 db 3000 Ft-os SPAR vásárlási utalvány.</span></h3>
+		<h1 class="title">Nyerteseink</h1>
+		<div class="list">
+			<ul>
+				<?php for ($i=0; $i < 10; $i++) { 
+					?>
+					<li>Lorem ipsum Dolor sit amet <span>2016.07.11</span></li>
+					<?php
+				} ?>
+			</ul>
+		</div>
+
+
+
+
 	</div>
 </main>
 <?php echo $footer; ?>
